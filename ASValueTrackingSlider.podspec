@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ASValueTrackingSlider"
-  s.version          = "0.12.1"
+  s.version          = "0.12.2"
   s.summary          = "A UISlider subclass that displays the slider value in an animated popUpView"
   s.description      = <<-DESC
                        Displays continuously updated values in an animated popUpView 
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
                        * Option to animate background color and slider track color as value changes
                        * Optional dataSource protocol to fully customize label text
                        DESC
-  s.homepage         = "https://github.com/alskipp/ASValueTrackingSlider"
+  s.homepage         = "https://github.com/Edeoinc/ASValueTrackingSlider"
   s.screenshots      = "http://alskipp.github.io/ASValueTrackingSlider/img/screenshot1.gif",
                        "http://alskipp.github.io/ASValueTrackingSlider/img/screenshot2.png"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/al_skipp'
   
   s.platform         = :ios, '8.0'
-  s.source           = { :git => "https://github.com/alskipp/ASValueTrackingSlider.git", :tag => "0.12.1" }
+  s.source           = { :git => "https://github.com/Edeoinc/ASValueTrackingSlider.git", :tag => "0.12.2" }
   s.source_files     = 'ASValueTrackingSlider'
   s.requires_arc     = true
 
