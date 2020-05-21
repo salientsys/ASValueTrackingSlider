@@ -352,6 +352,7 @@
     [self.popUpView setAnimationOffset:[self currentValueOffset] returnColor:^(UIColor *opaqueReturnColor) {
         super.minimumTrackTintColor = opaqueReturnColor;
     }];
+    [self.delegate slider:self didChangeValue:value];
 }
 
 - (void)setValue:(float)value animated:(BOOL)animated
@@ -363,11 +364,13 @@
                 [self.popUpView setAnimationOffset:[self currentValueOffset] returnColor:^(UIColor *opaqueReturnColor) {
                     super.minimumTrackTintColor = opaqueReturnColor;
                 }];
+                [self.delegate slider:self didChangeValue:value];
                 [self layoutIfNeeded];
             }];
         }];
     } else {
         [super setValue:value animated:animated];
+        [self.delegate slider:self didChangeValue:value];
     }
 }
 

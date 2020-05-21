@@ -80,6 +80,7 @@
 @optional
 - (void)sliderWillHidePopUpView:(ASValueTrackingSlider *)slider;
 - (void)sliderDidHidePopUpView:(ASValueTrackingSlider *)slider;
+- (void)slider:(ASValueTrackingSlider *)slider didChangeValue: (float)value;
 @end
 
 /*
